@@ -7,6 +7,7 @@ variable "instance_count" {
 # Another variable that references the instance_count variable
 variable "another_variable" {
   type = string
+  default = "The number of instances is ${var.instance_count}."
 }
 
 # Output the value of another_variable
